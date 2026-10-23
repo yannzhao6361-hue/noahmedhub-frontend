@@ -17,7 +17,8 @@ export default function FAQModal({ isOpen, onClose }) {
       setError('');
       setSearchQuery(''); // 每次打开重置搜索框
       setOpenIndex(null);
-      fetch('http://localhost:8080/noahmedhub/api/faq')
+     // fetch('http://localhost:8080/noahmedhub/api/faq')
+     fetch('https://noahmedhub-backend.onrender.com/noahmedhub/api/faq')
         .then((res) => {
           if (!res.ok) throw new Error('Failed to fetch FAQ data');
           return res.json();

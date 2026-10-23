@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8080/noahmedhub',
+        target: 'https://noahmedhub-backend.onrender.com',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path // 确保路径不做额外剔除

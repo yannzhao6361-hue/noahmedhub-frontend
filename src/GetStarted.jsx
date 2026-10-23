@@ -70,8 +70,9 @@ export default function GetStarted({ isOpen, onClose }) {
 
     try {
       // 直连后端 WildFly 接口，跳过 Vite 代理层
-      const response = await fetch('http://localhost:8080/noahmedhub/api/users', {
-        method: 'POST',
+     // const response = await fetch('http://localhost:8080/noahmedhub/api/users', {
+        const response = await fetch('https://noahmedhub-backend.onrender.com/noahmedhub/api/users', {
+     method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
