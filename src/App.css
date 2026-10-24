@@ -274,3 +274,46 @@ footer,
     height: auto !important;
   }
 }
+
+/* ==================================================
+   手机端响应式绝对适配 (Mobile Viewport Overrides)
+   ================================================== */
+@media screen and (max-width: 768px) {
+  /* 1. 顶部导航栏：在手机上改为竖排堆叠，防止菜单横向挤压溢出 */
+  .app-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 12px 15px !important;
+    gap: 12px !important;
+  }
+
+  /* 2. 导航菜单：在手机上允许换行、居中显示 */
+  .app-nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* 3. 主视觉 Hero 区域：让背景图片在手机上自适应铺满 */
+  .app-hero-section {
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 70vh !important;
+    padding: 1.5rem !important;
+  }
+
+  /* 4. Hero 区域的按钮位置在手机上稍微上移或居中 */
+  .hero-button-container {
+    margin-top: 15rem !important;
+  }
+
+  /* 5. 底部 Footer：将多列网格在手机上改为单列纵向排列 */
+  .footer-grid-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    padding: 2rem 1.5rem !important;
+  }
+}

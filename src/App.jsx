@@ -94,7 +94,7 @@ export default function App() {
     <div style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif', color: '#111827', margin: 0, padding: 0, width: '100%', boxSizing: 'border-box' }}>
       
       {/* 1. 顶部导航栏 (Navbar) */}
-      <header style={{
+      <header className="app-header" style={{
         position: 'sticky',
         top: 0,
         zIndex: 50,
@@ -132,7 +132,7 @@ export default function App() {
         </div>
 
         {/* 导航菜单项 */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '1.8rem', color: '#374151' }}>
+        <nav className="app-nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1.8rem', color: '#374151' }}>
           <a href="#home" style={linkStyle}>Home</a>
           <a href="#consultation" style={linkStyle}>Consultation</a>
           
@@ -187,7 +187,7 @@ export default function App() {
       </header>
 
       {/* 2. 主视觉区 (Hero Section) */}
-      <section style={{
+      <section className="app-hero-section" style={{
         position: 'relative',
         minHeight: '85vh',
         backgroundImage: 'url("/image0.png")',
@@ -203,7 +203,7 @@ export default function App() {
         boxSizing: 'border-box'
       }}>
         {/* 居中的 Get Started 按钮容器 */}
-        <div style={{ 
+        <div className="hero-button-container" style={{ 
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center', 
@@ -326,7 +326,7 @@ export default function App() {
           boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
           boxSizing: 'border-box'
         }}>
-          <div style={{
+          <div className="footer-grid-container" style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
             gap: '1rem',
@@ -480,7 +480,7 @@ export default function App() {
       <ContactUs 
         isOpen={isContactOpen} 
         onClose={() => setIsContactOpen(false)} 
-      />     
+      />    
 
       {/* 调用 FAQModal 弹窗子组件 */}
       <FAQModal 
