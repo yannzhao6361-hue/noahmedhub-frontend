@@ -222,3 +222,55 @@ footer,
     border-right-color: var(--border);
   }
 }
+
+/* ==================================================
+   手机端响应式优化 (Mobile Viewport Fixes)
+   ================================================== */
+@media screen and (max-width: 768px) {
+  /* 1. 确保页面整体不出现横向溢出 */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 2. 针对顶部导航栏/Header：在手机上改为上下堆叠，防止菜单被挤到右侧空白处 */
+  header, 
+  .header, 
+  [class*="header"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 15px 10px !important;
+  }
+
+  /* 3. 针对导航菜单链接（Consultation, Services, Blog, FAQ 等）：允许在手机上换行显示 */
+  nav, 
+  .nav-links, 
+  .menu, 
+  [class*="nav"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  /* 4. 主体图文区域：如果原本是左右分栏的，在手机上全部改为上下单列显示 */
+  .main-content, 
+  .hero, 
+  .content-container, 
+  [class*="content"] {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* 5. 确保所有图片、海报自适应手机屏幕宽度，绝不变形撑破页面 */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
