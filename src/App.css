@@ -5,35 +5,33 @@
   box-sizing: border-box !important;
 }
 
-/* 2. 强行统一所有主要区域容器的宽度与居中 */
-body, 
-#root, 
-#app, 
-main, 
-header, 
-footer, 
-.container,
-.main-container,
-.footer-container,
-[class*="footer"],
-[class*="banner"],
-[class*="header"] {
-  width: 100% !important;
-  max-width: 1200px !important; /* 统一限定最大宽度为 1200px */
-  margin-left: auto !important;
-  margin-right: auto !important;
+/* 2. 基础容器与全局重置 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* 3. 清除可能导致 Footer 变窄的额外内外边距 */
-footer, 
-.footer,
-[class*="footer"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+body, 
+#root, 
+#app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 电脑端通用最大宽度控制（排除 header 和 footer，交由各自内部控制） */
+.container,
+.main-container,
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --------------------------------------------------
-   以下保留 Vite 模板部分的基础样式（以防其他组件用到）
+   Vite 模板部分的基础样式
    -------------------------------------------------- */
 
 .counter {
@@ -224,156 +222,65 @@ footer,
 }
 
 /* ==================================================
-   手机端响应式优化 (Mobile Viewport Fixes)
-   ================================================== */
-@media screen and (max-width: 768px) {
-  /* 1. 确保页面整体不出现横向溢出 */
-  body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* 2. 针对顶部导航栏/Header：在手机上改为上下堆叠，防止菜单被挤到右侧空白处 */
-  header, 
-  .header, 
-  [class*="header"] {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    height: auto !important;
-    padding: 15px 10px !important;
-  }
-
-  /* 3. 针对导航菜单链接（Consultation, Services, Blog, FAQ 等）：允许在手机上换行显示 */
-  nav, 
-  .nav-links, 
-  .menu, 
-  [class*="nav"] {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 12px !important;
-    width: 100% !important;
-  }
-
-  /* 4. 主体图文区域：如果原本是左右分栏的，在手机上全部改为上下单列显示 */
-  .main-content, 
-  .hero, 
-  .content-container, 
-  [class*="content"] {
-    flex-direction: column !important;
-    width: 100% !important;
-    padding: 10px !important;
-  }
-
-  /* 5. 确保所有图片、海报自适应手机屏幕宽度，绝不变形撑破页面 */
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-}
-
-/* ==================================================
-   手机端响应式绝对适配 (Mobile Viewport Overrides)
-   ================================================== */
-@media screen and (max-width: 768px) {
-  /* 1. 顶部导航栏：在手机上改为竖排堆叠，防止菜单横向挤压溢出 */
-  .app-header {
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 12px 15px !important;
-    gap: 12px !important;
-  }
-
-  /* 2. 导航菜单：在手机上允许换行、居中显示 */
-  .app-nav-links {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 10px !important;
-    font-size: 0.85rem !important;
-  }
-
-  /* 3. 主视觉 Hero 区域：让背景图片在手机上自适应铺满 */
-  .app-hero-section {
-    background-size: cover !important;
-    background-position: center !important;
-    min-height: 70vh !important;
-    padding: 1.5rem !important;
-  }
-
-  /* 4. Hero 区域的按钮位置在手机上稍微上移或居中 */
-  .hero-button-container {
-    margin-top: 15rem !important;
-  }
-
-  /* 5. 底部 Footer：将多列网格在手机上改为单列纵向排列 */
-  .footer-grid-container {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2rem !important;
-    padding: 2rem 1.5rem !important;
-  }
-}
-/* ==================================================
-   移动端响应式适配（扩大触发范围至 1024px）
+   移动端响应式绝对适配 (Mobile & Tablet Viewport Overrides)
    ================================================== */
 @media screen and (max-width: 1024px) {
   /* 1. 确保页面整体不出现横向溢出 */
-  body, html {
-    overflow-x: hidden !important;
+  html, body, #root, #app {
     width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 
-  /* 2. 顶部导航栏：在手机/平板上改为上下纵向堆叠 */
+  /* 2. 顶部导航栏：在手机和平板上改为上下纵向堆叠，彻底消除右侧空白 */
   .app-header {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 12px 10px !important;
+    padding: 12px 15px !important;
     height: auto !important;
     width: 100% !important;
+    max-width: 100% !important;
   }
 
-  /* 3. 导航菜单：自动换行并居中显示 */
+  /* 3. 导航菜单：在手机上允许换行、居中显示 */
   .app-nav-links {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 10px !important;
+    align-items: center !important;
+    gap: 10px 14px !important;
     width: 100% !important;
-    font-size: 0.85rem !important;
+    font-size: 0.88rem !important;
   }
 
-  /* 4. 主视觉 Hero 区域：自适应手机屏幕宽度 */
+  /* 4. 主视觉 Hero 区域：让背景图片在手机上自适应铺满 */
   .app-hero-section {
     width: 100% !important;
+    max-width: 100% !important;
     background-size: cover !important;
     background-position: center top !important;
     min-height: 65vh !important;
-    padding: 1rem !important;
+    padding: 1.5rem 1rem !important;
   }
 
-  /* 5. 按钮位置调整 */
+  /* 5. Hero 区域的按钮位置在手机上适当居中调整 */
   .hero-button-container {
-    margin-top: 15rem !important;
+    margin-top: 12rem !important;
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
   }
 
-  /* 6. 底部 Footer：将多列网格改为单列上下排列 */
+  /* 6. 底部 Footer：将多列网格在手机上改为单列纵向排列 */
   .footer-grid-container {
     display: flex !important;
     flex-direction: column !important;
     gap: 1.5rem !important;
-    padding: 1.5rem 1rem !important;
+    padding: 2rem 1.5rem !important;
     width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box !important;
   }
 }
