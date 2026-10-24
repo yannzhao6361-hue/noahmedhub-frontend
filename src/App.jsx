@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css'; // <--- 必须加上这一行！否则 CSS 样式不会被打包！
 import GetStarted from './GetStarted'; // 引入 GetStarted 弹窗组件
 import AboutUs from './AboutUs';       // 引入 AboutUs 弹窗组件
 import ContactUs from './ContactUs';   // 引入 ContactUs 弹窗组件
