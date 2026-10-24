@@ -127,7 +127,7 @@ export default function App() {
             color: '#0f172a',
             letterSpacing: '0.5px'
           }}>
-            NOAHh MEDHUB
+            NOAH MEDHUB
           </span>
         </div>
 
