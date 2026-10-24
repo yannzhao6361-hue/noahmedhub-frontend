@@ -18,22 +18,24 @@ export default function AboutUs({ isOpen, onClose }) {
         justifyContent: 'center',
         zIndex: 1000,
         overflowY: 'auto', // 确保屏幕过低时页面可整体滚动
-        padding: '2rem 1rem'
+        padding: '1.5rem 1rem'
       }}
     >
       <div 
         style={{
           backgroundColor: '#ffffff',
           borderRadius: '12px',
-          width: '90%',
-          maxWidth: '680px',
-          padding: '2.5rem 3rem',
+          width: '100%',
+          maxWidth: '500px',
+          boxSizing: 'border-box', // <--- 关键修复：确保 padding 不会把容器撑出屏幕
+          padding: '2.5rem 1.8rem', // <--- 适当调小左右 padding，适配手机屏幕
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
           position: 'relative',
           color: '#2b2b2b',
           fontFamily: 'Georgia, serif, "Times New Roman"',
           textAlign: 'left',
-          lineHeight: '1.5'
+          lineHeight: '1.5',
+          margin: 'auto'
         }}
       >
         {/* 右上角关闭按钮 ❌ */}
@@ -41,15 +43,16 @@ export default function AboutUs({ isOpen, onClose }) {
           onClick={onClose}
           style={{
             position: 'absolute',
-            top: '1.2rem',
-            right: '1.2rem',
+            top: '1rem',
+            right: '1rem',
             background: 'none',
             border: 'none',
-            fontSize: '1.4rem',
-            color: '#94a3b8',
+            fontSize: '1.6rem',
+            color: '#64748b',
             cursor: 'pointer',
-            padding: '0.2rem 0.5rem',
-            lineHeight: 1
+            padding: '0.4rem 0.6rem',
+            lineHeight: 1,
+            zIndex: 10
           }}
         >
           &times;
