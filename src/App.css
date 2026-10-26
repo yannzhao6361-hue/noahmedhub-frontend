@@ -34,13 +34,11 @@ body,
 }
 
 /* 确保底部页脚采用正常文档流定位，不使用绝对定位悬浮覆盖正文 */
-/* 请找到对应的 Footer 选择器（例如 .footer, footer, 或您的页脚容器类） */
-footer, .footer, .footer-container, .app-footer {
-  position: relative !important;  /* 强制改为相对定位，不漂浮、不覆盖 */
-  bottom: auto !important;
-  margin-top: 60px !important;    /* 让它和上方正文保持一段安全距离 */
+footer, .footer-container, .app-footer {
+  position: relative !important;
+  width: 100% !important;
   clear: both !important;
-  z-index: 1 !important;
+  z-index: 10;
 }
 
 /* --------------------------------------------------
