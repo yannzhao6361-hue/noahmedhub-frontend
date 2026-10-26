@@ -311,7 +311,7 @@ export default function App() {
       {/* 3. 底部页脚区域 (Footer Section) */}
       <footer style={{
         padding: '0 0 0 0',
-        marginTop: '2rem',
+        marginTop: '0rem',
         width: '100%',
         backgroundColor: '#fbfbfa',
         boxSizing: 'border-box'
