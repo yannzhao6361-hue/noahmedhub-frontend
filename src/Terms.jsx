@@ -89,8 +89,8 @@ export default function Terms({ isOpen, onClose }) {
         }}>
           {/* 元信息区域 */}
           <div style={{ marginBottom: '1.5rem', color: '#1f2937' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> Feb. 26, 2027</p>
-            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> Dec. 28, 2026</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> Feb. 27, 2026</p>
+            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> Oct. 28, 2026</p>
 
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> NOAH MEDHUB INC.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>

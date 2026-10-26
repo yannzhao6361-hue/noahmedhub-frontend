@@ -89,15 +89,24 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
         }}>
           {/* 元信息区域 */}
           <div style={{ marginBottom: '1.5rem', color: '#1f2937' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> Feb. 26, 2027</p>
-            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> Dec. 28, 2026</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> Feb. 27, 2026</p>
+            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> Oct. 28, 2026</p>
 
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Operating Entity:</strong> NOAH MEDHUB INC.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Contact Email:</strong> yannzhao@hotmail.com</p>
-            <p style={{ margin: '0 0 1rem 0' }}>
-              <strong>Business Address:</strong> 112-970 Burrard Street, Office# 1565, Vancouver, BC V6Z 2R4, Canada
-            </p>
+
+{/* 修改前的单行长文本可能导致错位 */}
+{/* <p><strong>Business Address:</strong> 112-970 Burrard Street, Office# 1565, Vancouver, BC V6Z 2R4, Canada</p> */}
+
+{/* 优化后的结构（可以采用 Flex 左右对齐，或者用换行标签让地址整体缩进对齐） */}
+<div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+  <strong style={{ minWidth: '130px', display: 'inline-block' }}>Business Address:</strong>
+  <span style={{ lineHeight: '1.5' }}>
+    112-970 Burrard Street, Office# 1565,<br />
+    Vancouver, BC V6Z 2R4, Canada
+  </span>
+</div>
           </div>
 
           {/* 章节 1 */}

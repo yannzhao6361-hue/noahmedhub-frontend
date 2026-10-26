@@ -89,8 +89,8 @@ export default function CookiePolicy({ isOpen, onClose }) {
         }}>
           {/* 元信息区域 */}
           <div style={{ marginBottom: '1.5rem', color: '#1f2937' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> February 26, 2027</p>
-            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> December 28, 2026</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Effective Date:</strong> Feb. 27, 2026</p>
+            <p style={{ margin: '0 0 1rem 0' }}><strong>Last Updated:</strong> Oct. 28, 2026</p>
 
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Operating Entity:</strong> NOAH MEDHUB INC.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Business Address:</strong> 112-970 Burrard Street, Office# 1565, Vancouver, BC V6Z 2R4, Canada</p>

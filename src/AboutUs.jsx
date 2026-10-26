@@ -72,7 +72,7 @@ export default function AboutUs({ isOpen, onClose }) {
 
         {/* 简介段落 */}
         <p style={{ fontSize: '0.9rem', color: '#4a4a4a', marginBottom: '1.2rem', textAlign: 'left' }}>
-          Established by a team of professionals in medical-related operations, Noah MedHub Inc. is a Vancouver-based cross-border medical service platform. We bridge the global healthcare gap by connecting global patients with China's most advanced private hospitals, elite medical specialists, and holistic wellness centers. We are dedicated to provide a seamless, transparent, and trusted cross-border medical journey, ensuring that life-changing treatments are accessible to everyone and everywhere.
+          Established by a team of professionals in medical-related operations, Noah MedHub Inc. is a Vancouver-based cross-border medical service platform. We bridge the global healthcare gap by connecting global patients with China's most advanced public and private hospitals, elite medical specialists, and holistic wellness centers. We are dedicated to provide a seamless, transparent, and trusted cross-border medical journey, ensuring that life-changing treatments are accessible to everyone and everywhere.
         </p>
 
         {/* Mission */}
