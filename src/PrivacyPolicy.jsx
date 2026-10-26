@@ -998,7 +998,7 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             textAlign: 'center',
             fontSize: '1.1rem' 
           }}>
-            End of Privacy Policy[cite: 20]
+            End of Privacy Policy
           </p>
         </div>
       </div>

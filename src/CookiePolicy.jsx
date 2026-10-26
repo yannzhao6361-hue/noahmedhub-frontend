@@ -150,7 +150,7 @@ export default function CookiePolicy({ isOpen, onClose }) {
             If you have any questions, concerns, or requests regarding our use of cookies or this Cookie Policy, please contact our privacy team:
           </p>
           <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> YU, Jennifer</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Yu, Jennifer</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
             <p style={{ margin: '0 0 1rem 0' }}><strong>Mailing Address:</strong> 112-970 Burrard Street, Office# 1565, Vancouver, BC V6Z 2R4, Canada</p>
