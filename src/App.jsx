@@ -147,7 +147,7 @@ export default function App() {
           
           {/* 绑定点击事件开启 Real Stories 视频弹窗 */}
           <span 
-            onClick={() => setIsStoriesOpen(true)} 
+            //onClick={() => setIsStoriesOpen(true)} 
             style={linkStyle}
           >
             Real Stories
