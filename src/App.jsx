@@ -356,7 +356,7 @@ export default function App() {
                 <a href="#facebook" style={{ color: '#9ca3af', textDecoration: 'none' }}>f</a>
               </div>
 
-              <div style={{ fontSize: '0.78rem', color: '#9ca3af', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ fontSize: '0.78rem', color: '#9ca3af', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', textAlign: 'left' }}>
                 <div style={{ fontWeight: '600', color: '#e5e7eb', marginBottom: '0.1rem' }}>Contact us</div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                   <span>💬</span>
