@@ -940,28 +940,14 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             If you have questions about this Privacy Policy, wish to exercise your privacy rights, or would like to raise a concern about how we handle personal information, please contact:
           </p>
 
- <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
-  <div style={{ display: 'flex', marginBottom: '0.25rem' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Privacy Contact:</strong>
-    <span>Zhao, Yong Jian</span>
-  </div>
-  <div style={{ display: 'flex', marginBottom: '0.25rem' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Company:</strong>
-    <span>Noah MedHub Inc.</span>
-  </div>
-  <div style={{ display: 'flex', marginBottom: '0.25rem' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Email:</strong>
-    <span>info@noahmedhub.com</span>
-  </div>
-  <div style={{ display: 'flex', marginBottom: '0.25rem', alignItems: 'flex-start' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Mailing Address:&nbsp;</strong>
-    <span>&nbsp;112-970 Burrard Street, Office#1565,<br />Vancouver, BC V6Z 2R4, Canada</span>
-  </div>
-  <div style={{ display: 'flex', marginBottom: '1rem' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Website:</strong>
-    <span>www.noahmedhub.com</span>
-  </div>
-</div>
+          <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Zhao, Yong Jian</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address: :</strong>  112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
+            <p style={{ margin: '0 0 1rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>
+          </div>
+
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
             Please do not include medical records or other highly sensitive information in your initial email unless we have provided an appropriate secure submission method.
           </p>
