@@ -269,15 +269,16 @@ export default function App() {
         )}
       </section>
 
-      {/* 3. 底部页脚区域 (Footer Section) - 全黑无缝贴底，并将右下角客服图标纳入页脚右下角 */}
+      {/* 3. 底部页脚区域 (Footer Section) - 调整负边距和内边距，将黑色区域及文字大幅上提 */}
       <footer style={{
         width: '100%',
         backgroundColor: '#0f1412',
-        padding: '1rem 3rem 2.5rem 3rem',
+        padding: '0.5rem 3rem 2.5rem 3rem', // 顶部内边距减小到 0.5rem
         color: '#ffffff',
         boxSizing: 'border-box',
-        marginTop: '-7rem',
-        position: 'relative'
+        marginTop: '-12rem',             // 负边距加大到 -12rem，使整个黑色区域往上提
+        position: 'relative',
+        zIndex: 10
       }}>
         <div className="footer-grid-container" style={{
           display: 'grid',
@@ -417,7 +418,7 @@ export default function App() {
           </div>
         </div>
 
-        {/* 右下角绿色圆形在线客服图标（已移入黑色页脚区域右下角） */}
+        {/* 右下角绿色圆形在线客服图标 */}
         <div 
           onClick={() => setIsContactOpen(true)}
           style={{
