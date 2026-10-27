@@ -190,7 +190,7 @@ export default function App() {
       <section className="app-hero-section" style={{
         position: 'relative',
         minHeight: '85vh',
-        backgroundImage: 'url("/image0.png")',
+        backgroundImage: 'url("/image0.jpg")',
         backgroundSize: 'contain',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
