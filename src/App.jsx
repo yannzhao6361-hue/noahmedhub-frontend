@@ -25,15 +25,15 @@ const fallbackLogo = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000
 
 export default function App() {
   const [showCookie, setShowCookie] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);     // 控制 Get Started 弹窗显隐
-  const [isAboutOpen, setIsAboutOpen] = useState(false);     // 控制 About Us 弹窗显隐
-  const [isContactOpen, setIsContactOpen] = useState(false);   // 控制 Contact Us 弹窗显隐
-  const [isFaqOpen, setIsFaqOpen] = useState(false);         // 控制 FAQ 弹窗显隐
-  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);   // 控制 Privacy Policy 弹窗显隐
-  const [isCookieOpen, setIsCookieOpen] = useState(false);     // 控制 Cookie Policy 弹窗显隐
-  const [isTermsOpen, setIsTermsOpen] = useState(false);       // 控制 Terms of Service 弹窗显隐
-  const [isStoriesOpen, setIsStoriesOpen] = useState(false);   // 控制 Real Stories 视频弹窗显隐
-  const [isBlogsOpen, setIsBlogsOpen] = useState(false);       // 控制 Blogs 弹窗显隐
+  const [isModalOpen, setIsModalOpen] = useState(false);    // 控制 Get Started 弹窗显隐
+  const [isAboutOpen, setIsAboutOpen] = useState(false);    // 控制 About Us 弹窗显隐
+  const [isContactOpen, setIsContactOpen] = useState(false);  // 控制 Contact Us 弹窗显隐
+  const [isFaqOpen, setIsFaqOpen] = useState(false);        // 控制 FAQ 弹窗显隐
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);  // 控制 Privacy Policy 弹窗显隐
+  const [isCookieOpen, setIsCookieOpen] = useState(false);    // 控制 Cookie Policy 弹窗显隐
+  const [isTermsOpen, setIsTermsOpen] = useState(false);      // 控制 Terms of Service 弹窗显隐
+  const [isStoriesOpen, setIsStoriesOpen] = useState(false);  // 控制 Real Stories 视频弹窗显隐
+  const [isBlogsOpen, setIsBlogsOpen] = useState(false);      // 控制 Blogs 弹窗显隐
   const [isServicesOpen, setIsServicesOpen] = useState(false); // 控制 Services 弹窗显隐
   
   // 检查 localStorage，决定是否弹窗 Cookie 提示
@@ -147,7 +147,6 @@ export default function App() {
           
           {/* 绑定点击事件开启 Real Stories 视频弹窗 */}
           <span 
-            //onClick={() => setIsStoriesOpen(true)} 
             style={linkStyle}
           >
             Real Stories
@@ -308,159 +307,150 @@ export default function App() {
         </div>
       </section>
 
-      {/* 3. 底部页脚区域 (Footer Section) */}
+      {/* 3. 底部页脚区域 (Footer Section) - 已移除浅色外边距和负边距，直接全黑贴底 */}
       <footer style={{
-        padding: '0 0 0 0',
-        marginTop: '-7rem',
         width: '100%',
-        backgroundColor: '#fbfbfa',
-        boxSizing: 'border-box'
+        backgroundColor: '#0f1412',
+        padding: '3.5rem 3rem 2.5rem 3rem',
+        color: '#ffffff',
+        boxSizing: 'border-box',
+        marginTop: '0'
       }}>
-        <div style={{
-          width: '100%',
-          backgroundColor: '#0f1412',
-          borderRadius: '0',
-          padding: '3.5rem 3rem 2.5rem 3rem',
-          color: '#ffffff',
+        <div className="footer-grid-container" style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
+          gap: '1rem',
           position: 'relative',
-          overflow: 'hidden',
-          boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-          boxSizing: 'border-box'
+          zIndex: 2,
+          maxWidth: '1200px',
+          margin: '0 auto'
         }}>
-          <div className="footer-grid-container" style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
-            gap: '1rem',
-            position: 'relative',
-            zIndex: 2
-          }}>
-            {/* 第1列：Logo、社交链接与联系方式 */}
-            <div style={{ gridColumn: 'span 1' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                <img 
-                  src="/logo.jpg" 
-                  alt="NOAH MEDHUB" 
-                  style={{ height: '28px', width: 'auto', borderRadius: '4px' }} 
-                  onError={handleLogoError}
-                />
-                <span style={{ fontSize: '0.95rem', fontWeight: '700', letterSpacing: '0.5px', color: '#ffffff' }}>
-                  NOAH MEDHUB
+          {/* 第1列：Logo、社交链接与联系方式 */}
+          <div style={{ gridColumn: 'span 1', textAlign: 'left' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '0.5rem', marginBottom: '1rem' }}>
+              <img 
+                src="/logo.jpg" 
+                alt="NOAH MEDHUB" 
+                style={{ height: '28px', width: 'auto', borderRadius: '4px' }} 
+                onError={handleLogoError}
+              />
+              <span style={{ fontSize: '0.95rem', fontWeight: '700', letterSpacing: '0.5px', color: '#ffffff' }}>
+                NOAH MEDHUB
+              </span>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '0.6rem', marginBottom: '1.2rem', color: '#9ca3af', fontSize: '0.78rem' }}>
+              <span style={{ color: '#9ca3af' }}>Follow us</span>
+              <a href="#youtube" style={{ color: '#9ca3af', textDecoration: 'none' }}>▶</a>
+              <a href="#tiktok" style={{ color: '#9ca3af', textDecoration: 'none' }}>🎵</a>
+              <a href="#instagram" style={{ color: '#9ca3af', textDecoration: 'none' }}>📷</a>
+              <a href="#facebook" style={{ color: '#9ca3af', textDecoration: 'none' }}>f</a>
+            </div>
+
+            <div style={{ fontSize: '0.78rem', color: '#9ca3af', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', textAlign: 'left' }}>
+              <div style={{ fontWeight: '600', color: '#e5e7eb', marginBottom: '0.1rem', textAlign: 'left' }}>Contact us</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', textAlign: 'left' }}>
+                <span>💬</span>
+                <span>Chat on WhatsApp<br /><span style={{ color: '#6b7280', fontSize: '0.72rem' }}>+1 206-928-2651</span></span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', wordBreak: 'break-all', textAlign: 'left' }}>
+                <span>✉</span>
+                <span>info@noahmedhub.com</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', textAlign: 'left' }}>
+                <span>📞</span>
+                <span>+1 206-928-2651</span>
+              </div>
+            </div>
+
+            <div style={{ fontSize: '0.72rem', color: '#4b5563', marginTop: '1.5rem', textAlign: 'left', width: '100%' }}>
+              NOAH MEDHUB © 2026
+            </div>
+          </div>
+
+          {/* 第2列：Explore */}
+          <div style={{ textAlign: 'left' }}>
+            <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Explore</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
+              <li><a href="#home" style={{ color: '#9ca3af', textDecoration: 'none' }}>Home</a></li>
+            </ul>
+          </div>
+
+          {/* 第3列：Resources */}
+          <div style={{ textAlign: 'left' }}>
+            <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Resources</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
+              <li>
+                <span 
+                  onClick={() => setIsStoriesOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  User Stories
                 </span>
-              </div>
+              </li>
+              <li>
+                <span 
+                  onClick={() => setIsBlogsOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  Blog
+                </span>
+              </li>
+              <li>
+                <span 
+                  onClick={() => setIsFaqOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  FAQ
+                </span>
+              </li>
+            </ul>
+          </div>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.2rem', color: '#9ca3af', fontSize: '0.78rem' }}>
-                <span style={{ color: '#9ca3af' }}>Follow us</span>
-                <a href="#youtube" style={{ color: '#9ca3af', textDecoration: 'none' }}>▶</a>
-                <a href="#tiktok" style={{ color: '#9ca3af', textDecoration: 'none' }}>🎵</a>
-                <a href="#instagram" style={{ color: '#9ca3af', textDecoration: 'none' }}>📷</a>
-                <a href="#facebook" style={{ color: '#9ca3af', textDecoration: 'none' }}>f</a>
-              </div>
+          {/* 第4列：Company */}
+          <div style={{ textAlign: 'left' }}>
+            <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Company</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
+              <li>
+                <span 
+                  onClick={() => setIsAboutOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  About Us
+                </span>
+              </li>
+            </ul>
+          </div>
 
-              <div style={{ fontSize: '0.78rem', color: '#9ca3af', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', textAlign: 'left' }}>
-                <div style={{ fontWeight: '600', color: '#e5e7eb', marginBottom: '0.1rem' }}>Contact us</div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <span>💬</span>
-                  <span>Chat on WhatsApp<br /><span style={{ color: '#6b7280', fontSize: '0.72rem' }}>+1 206-928-2651</span></span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', wordBreak: 'break-all' }}>
-                  <span>✉</span>
-                  <span>info@noahmedhub.com</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <span>📞</span>
-                  <span>+1 206-928-2651</span>
-                </div>
-              </div>
-
-<div style={{ fontSize: '0.72rem', color: '#4b5563', marginTop: '1.5rem', textAlign: 'left', width: '100%' }}>
-  NOAH MEDHUB © 2026
-</div>
-            </div>
-
-            {/* 第2列：Explore */}
-            <div>
-              <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Explore</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
-                <li><a href="#home" style={{ color: '#9ca3af', textDecoration: 'none' }}>Home</a></li>
-              </ul>
-            </div>
-
-            {/* 第3列：Resources */}
-            <div>
-              <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Resources</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
-                <li>
-                  <span 
-                    onClick={() => setIsStoriesOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    User Stories
-                  </span>
-                </li>
-                <li>
-                  <span 
-                    onClick={() => setIsBlogsOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    Blog
-                  </span>
-                </li>
-                <li>
-                  <span 
-                    onClick={() => setIsFaqOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    FAQ
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            {/* 第4列：Company */}
-            <div>
-              <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Company</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
-                <li>
-                  <span 
-                    onClick={() => setIsAboutOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    About Us
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            {/* 第5列：Legal */}
-            <div>
-              <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Legal</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
-                <li>
-                  <span 
-                    onClick={() => setIsPrivacyOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    Privacy Policy
-                  </span>
-                </li>
-                <li>
-                  <span 
-                    onClick={() => setIsTermsOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    Terms of Service
-                  </span>
-                </li>
-                <li>
-                  <span 
-                    onClick={() => setIsCookieOpen(true)} 
-                    style={{ color: '#9ca3af', cursor: 'pointer' }}
-                  >
-                    Cookie Policy
-                  </span>
-                </li>
-              </ul>
-            </div>
+          {/* 第5列：Legal */}
+          <div style={{ textAlign: 'left' }}>
+            <h4 style={{ fontSize: '0.85rem', fontWeight: '600', color: '#ffffff', marginBottom: '0.8rem' }}>Legal</h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.78rem', color: '#9ca3af' }}>
+              <li>
+                <span 
+                  onClick={() => setIsPrivacyOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  Privacy Policy
+                </span>
+              </li>
+              <li>
+                <span 
+                  onClick={() => setIsTermsOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  Terms of Service
+                </span>
+              </li>
+              <li>
+                <span 
+                  onClick={() => setIsCookieOpen(true)} 
+                  style={{ color: '#9ca3af', cursor: 'pointer' }}
+                >
+                  Cookie Policy
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>
@@ -513,7 +503,7 @@ export default function App() {
         onClose={() => setIsStoriesOpen(false)} 
       />
 
-      {/* 调用 Blogs 弹窗子组件 */}
+      {/* Blogs 弹窗子组件 */}
       <Blogs 
         isOpen={isBlogsOpen} 
         onClose={() => setIsBlogsOpen(false)} 
