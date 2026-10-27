@@ -101,7 +101,7 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
 
 {/* 优化后的结构（可以采用 Flex 左右对齐，或者用换行标签让地址整体缩进对齐） */}
 <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-  <strong style={{ minWidth: '130px', display: 'inline-block' }}>Business Address:</strong>
+  <strong style={{ minWidth: '130px', display: 'inline-block' }}>Business Address::</strong>
   <span style={{ lineHeight: '1.5' }}>
     112-970 Burrard Street, Office# 1565,<br />
     Vancouver, BC V6Z 2R4, Canada
@@ -940,14 +940,14 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             If you have questions about this Privacy Policy, wish to exercise your privacy rights, or would like to raise a concern about how we handle personal information, please contact:
           </p>
 
-          <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Zhao, Yong Jian</p>
+      /*    <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Yu, Yong Jian</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address: :</strong>  112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address:</strong>  112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
             <p style={{ margin: '0 0 1rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>
           </div>
-
+*/
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
             Please do not include medical records or other highly sensitive information in your initial email unless we have provided an appropriate secure submission method.
           </p>
