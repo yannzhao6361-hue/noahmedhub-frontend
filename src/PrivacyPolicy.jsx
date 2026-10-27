@@ -954,8 +954,8 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
     <span>info@noahmedhub.com</span>
   </div>
   <div style={{ display: 'flex', marginBottom: '0.25rem', alignItems: 'flex-start' }}>
-    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Mailing Address:</strong>
-    <span>&nbsp;&nbsp;112-970 Burrard Street, Office#1565,<br />Vancouver, BC V6Z 2R4, Canada</span>
+    <strong style={{ minWidth: '150px', display: 'inline-block' }}>Mailing Address:&nbsp;</strong>
+    <span>&nbsp;112-970 Burrard Street, Office#1565,<br />Vancouver, BC V6Z 2R4, Canada</span>
   </div>
   <div style={{ display: 'flex', marginBottom: '1rem' }}>
     <strong style={{ minWidth: '150px', display: 'inline-block' }}>Website:</strong>
