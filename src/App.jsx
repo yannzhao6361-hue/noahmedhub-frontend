@@ -273,10 +273,10 @@ export default function App() {
       <footer style={{
         width: '100%',
         backgroundColor: '#0f1412',
-        padding: '1.5rem 3rem 2.5rem 3rem',
+        padding: '1rem 3rem 2.5rem 3rem',
         color: '#ffffff',
         boxSizing: 'border-box',
-        marginTop: '-6rem',
+        marginTop: '-7rem',
         position: 'relative'
       }}>
         <div className="footer-grid-container" style={{
