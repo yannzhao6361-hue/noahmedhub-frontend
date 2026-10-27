@@ -267,54 +267,17 @@ export default function App() {
             </div>
           </div>
         )}
-
-        {/* 在线客服图标，点击同样开启 Contact Us 弹窗 */}
-        <div 
-          onClick={() => setIsContactOpen(true)}
-          style={{
-            position: 'fixed',
-            bottom: '2rem',
-            right: '2.5rem',
-            backgroundColor: '#10b981',
-            width: '54px',
-            height: '54px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#ffffff',
-            boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)',
-            cursor: 'pointer',
-            zIndex: 100
-          }}
-        >
-          💬
-          <span style={{
-            position: 'absolute',
-            top: '2px',
-            right: '2px',
-            backgroundColor: '#ef4444',
-            color: '#fff',
-            borderRadius: '50%',
-            width: '18px',
-            height: '18px',
-            fontSize: '0.7rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontWeight: 'bold'
-          }}>1</span>
-        </div>
       </section>
 
-      {/* 3. 底部页脚区域 (Footer Section) - 已移除浅色外边距和负边距，直接全黑贴底 */}
+      {/* 3. 底部页脚区域 (Footer Section) - 全黑无缝贴底，并将右下角客服图标纳入页脚右下角 */}
       <footer style={{
         width: '100%',
         backgroundColor: '#0f1412',
         padding: '3.5rem 3rem 2.5rem 3rem',
         color: '#ffffff',
         boxSizing: 'border-box',
-        marginTop: '0'
+        marginTop: '0',
+        position: 'relative'
       }}>
         <div className="footer-grid-container" style={{
           display: 'grid',
@@ -453,6 +416,44 @@ export default function App() {
             </ul>
           </div>
         </div>
+
+        {/* 右下角绿色圆形在线客服图标（已移入黑色页脚区域右下角） */}
+        <div 
+          onClick={() => setIsContactOpen(true)}
+          style={{
+            position: 'absolute',
+            bottom: '2rem',
+            right: '2.5rem',
+            backgroundColor: '#10b981',
+            width: '54px',
+            height: '54px',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#ffffff',
+            boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)',
+            cursor: 'pointer',
+            zIndex: 100
+          }}
+        >
+          💬
+          <span style={{
+            position: 'absolute',
+            top: '2px',
+            right: '2px',
+            backgroundColor: '#ef4444',
+            color: '#fff',
+            borderRadius: '50%',
+            width: '18px',
+            height: '18px',
+            fontSize: '0.7rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontWeight: 'bold'
+          }}>1</span>
+        </div>
       </footer>
       
       {/* 调用 GetStarted 弹窗子组件 */}
@@ -503,7 +504,7 @@ export default function App() {
         onClose={() => setIsStoriesOpen(false)} 
       />
 
-      {/* Blogs 弹窗子组件 */}
+      {/* 调用 Blogs 弹窗子组件 */}
       <Blogs 
         isOpen={isBlogsOpen} 
         onClose={() => setIsBlogsOpen(false)} 
