@@ -5,22 +5,15 @@
   box-sizing: border-box !important;
 }
 
-/* 2. 基础容器与全局重置 */
-html, body {
+/* 2. 基础容器与全局重置：将底层背景色设为深色页脚色，彻底杜绝底部白边 */
+html, body, #root, #app {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100%;
+  background-color: #0f1412; /* 网页最底层背景统一，杜绝白色空白 */
   overflow-x: hidden;
   position: relative;
-  /* 关键修复：给页面底部留出足够的安全距离，防止正文文字被底部的黑色区域遮挡 */
-  padding-bottom: 120px; 
-}
-
-body, 
-#root, 
-#app {
-  width: 100%;
-  margin: 0 auto;
 }
 
 /* 电脑端通用最大宽度控制（排除 header 和 footer，交由各自内部控制） */
