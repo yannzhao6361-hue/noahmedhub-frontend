@@ -276,7 +276,7 @@ export default function App() {
         padding: '3.5rem 3rem 2.5rem 3rem',
         color: '#ffffff',
         boxSizing: 'border-box',
-        marginTop: '-5rem',
+        marginTop: '-4rem',
         position: 'relative'
       }}>
         <div className="footer-grid-container" style={{
