@@ -944,7 +944,7 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Zhao, Yong Jian</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address:</strong><br></br>  112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address:</strong>  &nbsp; 112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
             <p style={{ margin: '0 0 1rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>
           </div>
 
