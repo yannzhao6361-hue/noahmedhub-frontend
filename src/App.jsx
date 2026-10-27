@@ -207,7 +207,7 @@ export default function App() {
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center', 
-          marginTop: '20rem' 
+          marginTop: '9rem' 
         }}>
           <button 
             onClick={() => setIsModalOpen(true)}
@@ -273,7 +273,7 @@ export default function App() {
       <footer style={{
         width: '100%',
         backgroundColor: '#0f1412',
-        padding: '3.5rem 3rem 2.5rem 3rem',
+        padding: '1.5rem 3rem 2.5rem 3rem',
         color: '#ffffff',
         boxSizing: 'border-box',
         marginTop: '-6rem',
