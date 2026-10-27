@@ -372,9 +372,9 @@ export default function App() {
                 </div>
               </div>
 
-              <div style={{ fontSize: '0.72rem', color: '#ffffff', marginTop: '1.2rem' }}>
-                NOAH MEDHUB © 2026
-              </div>
+<div style={{ fontSize: '0.72rem', color: '#4b5563', marginTop: '1.5rem', textAlign: 'left', width: '100%' }}>
+  NOAH MEDHUB © 2026
+</div>
             </div>
 
             {/* 第2列：Explore */}

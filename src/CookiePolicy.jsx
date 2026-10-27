@@ -153,7 +153,14 @@ export default function CookiePolicy({ isOpen, onClose }) {
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Yu, Jennifer</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
-            <p style={{ margin: '0 0 1rem 0' }}><strong>Mailing Address:</strong> 112-970 Burrard Street, Office# 1565, Vancouver, BC V6Z 2R4, Canada</p>
+{/* Mailing Address 左右对齐布局 */}
+<div style={{ display: 'flex', alignItems: 'flex-start', margin: '0.4rem 0' }}>
+  <strong style={{ minWidth: '140px', display: 'inline-block' }}>Mailing Address:</strong>
+  <span style={{ lineHeight: '1.5' }}>
+    112-970 Burrard Street, Office# 1565,<br />
+    Vancouver, BC V6Z 2R4, Canada
+  </span>
+</div>
           </div>
         </div>
       </div>
