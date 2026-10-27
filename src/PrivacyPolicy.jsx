@@ -792,23 +792,23 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            10. Information About Other People[cite: 15]
+            10. Information About Other People
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            If you provide information about a family member, companion, or another patient, you should ensure that you are authorized to share it.[cite: 15]
+            If you provide information about a family member, companion, or another patient, you should ensure that you are authorized to share it.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Where consent or other legal authorization is required, you must obtain it before providing the information to us.[cite: 16]
+            Where consent or other legal authorization is required, you must obtain it before providing the information to us.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We may ask for additional confirmation before accepting instructions or disclosing information to a family member or representative.[cite: 16]
+            We may ask for additional confirmation before accepting instructions or disclosing information to a family member or representative.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            We will not assume that a family relationship alone authorizes access to an adult patient's medical information.[cite: 16]
+            We will not assume that a family relationship alone authorizes access to an adult patient's medical information.
           </p>
 
           {/* 章节 11 */}
@@ -819,23 +819,23 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            11. Children and Individuals Requiring Representation[cite: 16]
+            11. Children and Individuals Requiring Representation
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Our services are primarily intended for adults.[cite: 16]
+            Our services are primarily intended for adults.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            If you seek coordination services for a child or a person who requires a legally authorized representative, please contact us before submitting sensitive information.[cite: 16]
+            If you seek coordination services for a child or a person who requires a legally authorized representative, please contact us before submitting sensitive information.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We will take steps appropriate to the circumstances to establish the authority of a parent, guardian, or other representative and to obtain any consent required by applicable law.[cite: 16]
+            We will take steps appropriate to the circumstances to establish the authority of a parent, guardian, or other representative and to obtain any consent required by applicable law.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            We do not knowingly collect children's personal information for unrelated purposes.[cite: 16]
+            We do not knowingly collect children's personal information for unrelated purposes.
           </p>
 
           {/* 章节 12 */}
@@ -846,29 +846,29 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            12. Cookies and Similar Technologies[cite: 16]
+            12. Cookies and Similar Technologies
           </h2>
 
           <p style={{ margin: '0 0 0.5rem 0', color: '#374151' }}>
-            Our website may use cookies and similar technologies to:[cite: 16]
+            Our website may use cookies and similar technologies to:
           </p>
           <ul style={{ margin: '0 0 1rem 0', paddingLeft: '1.5rem', color: '#374151' }}>
-            <li style={{ marginBottom: '0.35rem' }}>Enable essential website functions.[cite: 16]</li>
-            <li style={{ marginBottom: '0.35rem' }}>Maintain website security.[cite: 16]</li>
-            <li style={{ marginBottom: '0.35rem' }}>Remember certain preferences.[cite: 16]</li>
-            <li style={{ marginBottom: '0.35rem' }}>Understand website performance and usage, where permitted.[cite: 16]</li>
+            <li style={{ marginBottom: '0.35rem' }}>Enable essential website functions.</li>
+            <li style={{ marginBottom: '0.35rem' }}>Maintain website security.</li>
+            <li style={{ marginBottom: '0.35rem' }}>Remember certain preferences.</li>
+            <li style={{ marginBottom: '0.35rem' }}>Understand website performance and usage, where permitted.</li>
           </ul>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Where required, we will seek consent before using non-essential cookies or similar technologies.[cite: 17]
+            Where required, we will seek consent before using non-essential cookies or similar technologies.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            You may be able to control cookies through your browser settings or a website cookie preference tool. Disabling certain cookies may affect website functionality.[cite: 17]
+            You may be able to control cookies through your browser settings or a website cookie preference tool. Disabling certain cookies may affect website functionality.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            If we introduce advertising, analytics, or other tracking technologies in the future, we will update our notices and consent mechanisms as appropriate.[cite: 17]
+            If we introduce advertising, analytics, or other tracking technologies in the future, we will update our notices and consent mechanisms as appropriate.
           </p>
 
           {/* 章节 13 */}
@@ -879,23 +879,23 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            13. External Websites and Third-Party Services[cite: 17]
+            13. External Websites and Third-Party Services
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Our website may contain links to hospitals, healthcare providers, travel agencies, communication platforms, payment providers, and other third-party websites.[cite: 17]
+            Our website may contain links to hospitals, healthcare providers, travel agencies, communication platforms, payment providers, and other third-party websites.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Those websites and services may have their own privacy policies, data collection practices, and security arrangements.[cite: 18]
+            Those websites and services may have their own privacy policies, data collection practices, and security arrangements.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We are not responsible for the independent privacy practices of third parties simply because we link to them. We encourage you to review their policies before providing personal information directly to them.[cite: 18]
+            We are not responsible for the independent privacy practices of third parties simply because we link to them. We encourage you to review their policies before providing personal information directly to them.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            Where we engage a third party to process information on our behalf, we will take appropriate steps to establish and maintain safeguards consistent with our legal obligations.[cite: 18]
+            Where we engage a third party to process information on our behalf, we will take appropriate steps to establish and maintain safeguards consistent with our legal obligations.
           </p>
 
           {/* 章节 14 */}
@@ -906,23 +906,23 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            14. Changes to This Privacy Policy[cite: 18]
+            14. Changes to This Privacy Policy
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We may update this Privacy Policy to reflect changes in our services, technology, business practices, or legal obligations.[cite: 18]
+            We may update this Privacy Policy to reflect changes in our services, technology, business practices, or legal obligations.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            The revised version will be posted on our website with an updated “Last Updated” date.[cite: 18]
+            The revised version will be posted on our website with an updated “Last Updated” date.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            If a change materially affects how we handle sensitive personal information, we will provide additional notice or seek renewed consent where required by law.[cite: 18]
+            If a change materially affects how we handle sensitive personal information, we will provide additional notice or seek renewed consent where required by law.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            We encourage you to review this Policy periodically.[cite: 18]
+            We encourage you to review this Policy periodically.
           </p>
 
           {/* 章节 15 */}
@@ -933,31 +933,31 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            15. Contact Us About Privacy[cite: 18]
+            15. Contact Us About Privacy
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            If you have questions about this Privacy Policy, wish to exercise your privacy rights, or would like to raise a concern about how we handle personal information, please contact:[cite: 18]
+            If you have questions about this Privacy Policy, wish to exercise your privacy rights, or would like to raise a concern about how we handle personal information, please contact:
           </p>
 
           <div style={{ margin: '0 0 1rem 0', color: '#374151', lineHeight: '1.7' }}>
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Zhao, Yong Jian</p>[cite: 18]
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>[cite: 18]
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>[cite: 18]
-            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address:</strong> 112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>[cite: 18]
-            <p style={{ margin: '0 0 1rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>[cite: 18]
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Privacy Contact:</strong> Zhao, Yong Jian</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Company:</strong> Noah MedHub Inc.</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Email:</strong> info@noahmedhub.com</p>
+            <p style={{ margin: '0 0 0.25rem 0' }}><strong>Mailing Address:</strong> 112-970 Burrard Street, Office#1565, Vancouver, BC V6Z 2R4, Canada</p>
+            <p style={{ margin: '0 0 1rem 0' }}><strong>Website:</strong> www.noahmedhub.com</p>
           </div>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Please do not include medical records or other highly sensitive information in your initial email unless we have provided an appropriate secure submission method.[cite: 19]
+            Please do not include medical records or other highly sensitive information in your initial email unless we have provided an appropriate secure submission method.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We will review privacy inquiries and complaints and respond in accordance with applicable law.[cite: 19]
+            We will review privacy inquiries and complaints and respond in accordance with applicable law.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            If you are not satisfied with our response, you may have the right to contact the Office of the Information and Privacy Commissioner for British Columbia, the Office of the Privacy Commissioner of Canada, or another competent privacy authority, depending on the circumstances.[cite: 19]
+            If you are not satisfied with our response, you may have the right to contact the Office of the Information and Privacy Commissioner for British Columbia, the Office of the Privacy Commissioner of Canada, or another competent privacy authority, depending on the circumstances.
           </p>
 
           {/* 章节 16 */}
@@ -968,27 +968,27 @@ export default function PrivacyPolicy({ isOpen, onClose }) {
             marginTop: '2rem', 
             marginBottom: '1rem' 
           }}>
-            16. Important Notice About Our Services[cite: 20]
+            16. Important Notice About Our Services
           </h2>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Noah MedHub Inc. provides coordination and administrative support for international patients exploring or arranging medical services in China.[cite: 20]
+            Noah MedHub Inc. provides coordination and administrative support for international patients exploring or arranging medical services in China.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            We do not diagnose conditions, prescribe treatments, perform medical procedures, or replace licensed healthcare professionals.[cite: 20]
+            We do not diagnose conditions, prescribe treatments, perform medical procedures, or replace licensed healthcare professionals.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            The medical information you provide is used for the coordination purposes explained in this Policy and does not, by itself, establish a doctor-patient relationship with us.[cite: 20]
+            The medical information you provide is used for the coordination purposes explained in this Policy and does not, by itself, establish a doctor-patient relationship with us.
           </p>
 
           <p style={{ margin: '0 0 1rem 0', color: '#374151' }}>
-            Hospitals and healthcare professionals are responsible for their own clinical assessments, treatment decisions, and medical records. Patients should direct clinical questions to appropriately qualified healthcare professionals.[cite: 20]
+            Hospitals and healthcare professionals are responsible for their own clinical assessments, treatment decisions, and medical records. Patients should direct clinical questions to appropriately qualified healthcare professionals.
           </p>
 
           <p style={{ margin: '0 0 1.5rem 0', color: '#374151' }}>
-            Our goal is to help patients navigate the administrative, language, cultural, and logistical aspects of a cross-border medical journey while treating their personal information with care and respect.[cite: 20]
+            Our goal is to help patients navigate the administrative, language, cultural, and logistical aspects of a cross-border medical journey while treating their personal information with care and respect.
           </p>
 
           <p style={{ 
