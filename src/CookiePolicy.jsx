@@ -95,7 +95,7 @@ export default function CookiePolicy({ isOpen, onClose }) {
             <p style={{ margin: '0 0 0.25rem 0' }}><strong>Operating Entity:</strong> NOAH MEDHUB INC.</p>
  {/* 优化后的结构（可以采用 Flex 左右对齐，或者用换行标签让地址整体缩进对齐） */}
 <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-  <strong style={{ minWidth: '130px', display: 'inline-block' }}>Business Address:</strong>
+  <strong style={{ minWidth: '130px', display: 'inline-block' }}>Business Address: &nbsp;</strong>
   <span style={{ lineHeight: '1.5' }}>
     112-970 Burrard Street, Office# 1565,<br />
     Vancouver, BC V6Z 2R4, Canada
