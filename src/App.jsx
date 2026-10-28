@@ -272,7 +272,7 @@ export default function App() {
       {/* 3. 底部页脚区域 (Footer Section) - 调整负边距和内边距，将黑色区域及文字大幅上提 */}
       <footer style={{
         width: '100%',
-        backgroundColor: '#122036', // 使用标准的深蓝色色值
+        backgroundColor: '#0e2246', // 使用标准的深蓝色色值
         padding: '0.5rem 3rem 2.5rem 3rem', // 顶部内边距减小到 0.5rem
         color: '#ffffff',
         boxSizing: 'border-box',
