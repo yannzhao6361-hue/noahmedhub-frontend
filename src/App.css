@@ -339,3 +339,64 @@ footer, .footer-container, .app-footer {
     box-sizing: border-box !important;
   }
 }
+/* ==================================================
+   移动端 Hero 区域强力强制重置 (Overriding Hero Layout)
+   ================================================== */
+@media screen and (max-width: 1024px) {
+  /* 1. 强制 Banner 容器改为上下垂直排列 */
+  section,
+  div[class*="hero"],
+  div[class*="banner"],
+  div[class*="Hero"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* 2. 强制左侧文字/按钮包裹层占满宽度，避免被挤到屏幕左外侧 */
+  div[class*="hero"] > div,
+  div[class*="banner"] > div,
+  section > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    text-align: center !important;
+  }
+
+  /* 3. 强制标题文字自动适配手机屏宽、自适应换行 */
+  h1, h2, h3, p, 
+  [class*="title"], 
+  [class*="Text"] {
+    max-width: 100% !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* 4. 强制“Get Started”等所有按钮在手机端居中且可见 */
+  button, 
+  a[class*="btn"], 
+  a[class*="button"],
+  div[class*="button"] {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin: 1.2rem auto !important;
+    position: relative !important;
+    z-index: 99 !important;
+  }
+
+  /* 5. 限制背景图片/右侧双人头像图片的自适应显示 */
+  img, svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
