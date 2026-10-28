@@ -11,7 +11,7 @@ html, body, #root, #app {
   padding: 0;
   width: 100%;
   min-height: 100%;
-  background-color: #06162b !important; /* 网页最底层背景统一，杜绝白色空白 */
+  background-color: #081b33 !important; /* 网页最底层背景统一，杜绝白色空白 */
   overflow-x: hidden;
   position: relative;
 }
