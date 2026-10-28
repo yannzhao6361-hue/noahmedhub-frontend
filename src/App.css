@@ -236,7 +236,7 @@ footer, .footer-container, .app-footer {
     overflow-x: hidden !important;
   }
 
-  /* 2. 顶部导航栏：在手机和平板上改为上下纵向堆叠，彻底消除右侧空白 */
+  /* 2. 顶部导航栏：在手机和平板上改为上下纵向堆叠 */
   .app-header {
     display: flex !important;
     flex-direction: column !important;
@@ -259,25 +259,76 @@ footer, .footer-container, .app-footer {
     font-size: 0.88rem !important;
   }
 
-  /* 4. 主视觉 Hero 区域：让背景图片在手机上自适应铺满 */
-  .app-hero-section {
+  /* 4. 主视觉 Hero 区域：支持纵向延伸与内边距适应 */
+  .app-hero-section,
+  .hero-section {
     width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
     background-size: cover !important;
     background-position: center top !important;
-    min-height: 65vh !important;
-    padding: 1.5rem 1rem !important;
+    padding: 2rem 1rem 3rem 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
-  /* 5. Hero 区域的按钮位置在手机上适当居中调整 */
-  .hero-button-container {
-    margin-top: 12rem !important;
+  /* 4b. 强制 Hero 内部的左右排列变为上下单列排列 */
+  .hero-container,
+  .hero-content,
+  .app-hero-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* 4c. 移动端大标题与文字尺寸调优，避免挤占空间 */
+  .hero-title,
+  .hero-text,
+  .hero-content h1,
+  .hero-content h2 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+    word-break: break-word !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* 5. Hero 区域的按钮容器修正：剔除超大外边距，确保居中显眼 */
+  .hero-button-container,
+  .hero-actions,
+  .hero-buttons {
+    margin-top: 1.5rem !important; /* 修正原本 12rem 过大的问题 */
+    margin-bottom: 1.5rem !important;
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    z-index: 5 !important;
   }
 
-  /* 6. 底部 Footer：将多列网格在手机上改为单列纵向排列，并加大底部内边距 */
+  /* 5b. 确保 Get Started 按钮大小合宜 */
+  .get-started-btn,
+  .btn-primary,
+  .hero-button-container button,
+  .hero-button-container a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px 28px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    max-width: 280px !important;
+    width: 80% !important;
+  }
+
+  /* 6. 底部 Footer：单列纵向排列 */
   .footer-grid-container {
     display: flex !important;
     flex-direction: column !important;
