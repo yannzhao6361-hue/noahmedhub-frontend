@@ -189,16 +189,16 @@ export default function App() {
       {/* 2. 主视觉区 (Hero Section) */}
       <section className="app-hero-section" style={{
         position: 'relative',
-        minHeight: '85vh',
+        minHeight: '600px',
         backgroundImage: 'url("/image0.jpg")',
-        backgroundSize: 'contain',
+       backgroundSize: 'cover', // 让背景图铺满整个区域，避免出现空白缝隙
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '2rem 2.5rem',
+        padding: '4rem 2.5rem 5rem 2.5rem',
         color: '#ffffff',
         boxSizing: 'border-box'
       }}>
@@ -273,10 +273,10 @@ export default function App() {
       <footer style={{
         width: '100%',
         backgroundColor: '#0b2545', // 使用标准的深蓝色色值
-        padding: '0.5rem 3rem 2.5rem 3rem', // 顶部内边距减小到 0.5rem
+        padding: '2.5rem 3rem 2.5rem 3rem', // 恢复正常的上下内边距
         color: '#ffffff',
         boxSizing: 'border-box',
-        marginTop: '-12rem',             // 负边距加大到 -12rem，使整个黑色区域往上提
+        marginTop: '0',             // 负边距加大到 -12rem，使整个黑色区域往上提
         position: 'relative',
         zIndex: 10
       }}>
