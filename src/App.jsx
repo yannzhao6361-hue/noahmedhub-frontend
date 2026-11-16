@@ -202,12 +202,16 @@ export default function App() {
         color: '#ffffff',
         boxSizing: 'border-box'
       }}>
-        {/* 居中的 Get Started 按钮容器 */}
+ {/* 居中的 Get Started 按钮容器 */}
         <div className="hero-button-container" style={{ 
+          position: 'absolute',
+          bottom: '7%',          // 距离 Hero 区域底部 7%，按比例自适应所有屏幕高度
+          left: '50%',
+          transform: 'translateX(-50%)', // 水平精准居中
           display: 'flex', 
           justifyContent: 'center', 
-          alignItems: 'center', 
-          marginTop: '9rem' 
+          alignItems: 'center',
+          zIndex: 10
         }}>
           <button 
             onClick={() => setIsModalOpen(true)}
