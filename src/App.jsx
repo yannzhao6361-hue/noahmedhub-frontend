@@ -191,12 +191,12 @@ export default function App() {
         position: 'relative',
         minHeight: '600px',
         backgroundImage: 'url("/image0.jpg")',
-       backgroundSize: 'cover', // 让背景图铺满整个区域，避免出现空白缝隙
+      backgroundSize: '100% 100%', // 让图片在各尺寸屏幕上都 100% 完整展示，不裁边
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'space-between', // 让顶部文字靠上、按钮靠下自然分开
         alignItems: 'center',
         padding: '4rem 2.5rem 5rem 2.5rem',
         color: '#ffffff',
