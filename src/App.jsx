@@ -190,7 +190,7 @@ export default function App() {
       <section className="app-hero-section" style={{
         position: 'relative',
         minHeight: '600px',
-        backgroundImage: 'url("/image1.jpg")',
+        backgroundImage: 'url("/image1.png")',
       backgroundSize: '100% 100%', // 让图片在各尺寸屏幕上都 100% 完整展示，不裁边
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
